@@ -5,7 +5,8 @@
 body, html {
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: white;
 }
 
 body {
@@ -20,16 +21,20 @@ body {
     @extend %clearfix;
 }
 
+.main {
+    display: flex;
+}
+
 .wrapper {
     overflow: hidden;
     min-height: 100%;
     min-width: $container-width + 20px;
 
-    &:after {               //footer fixing
-        content: "";
-        display: block; 
-        height: $footer-height;
-    }
+//     &:after {               //footer fixing
+//         content: "";
+//         display: block; 
+//         height: $footer-height;
+//     }
 }
 
 footer {

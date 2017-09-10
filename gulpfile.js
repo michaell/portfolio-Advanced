@@ -71,7 +71,8 @@ function styles() {
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(paths.styles.dest))       
+        .pipe(gulp.dest(paths.styles.dest))
+        .pipe(browserSync.stream())       
 }
 
 /*-------combining outer plugins and style libraries--------*/
@@ -120,7 +121,8 @@ function server() {
     browserSync.init({
         server: paths.root   
     });
-    browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
+    // browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
+    browserSync.watch([paths.root, '!**/*.css'], browserSync.reload);
 }
 
 /*-------function exports to start them from the console-------*/

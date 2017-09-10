@@ -1,13 +1,19 @@
 extends ../template
 
 block variables
-  - var title = 'Добро пожаловать'
+  - var title = 'Обо мне'
 
 block content
-  h1 Не главная
-  form
-    label(for="email") 
-    input(name="email" id="email")
-    label(for="password") 
-    input(name="password" id="password")
-    button Войти
+    div.wrapper.wrapper-welcome
+        .container.welcome
+            div.main
+                .central-block
+                    .about
+                        .about__portrait
+                            .about__img
+                                img.about__pic(src="assets/images/portrait.jpg", alt="")
+                        .about__description
+                            .about__name
+                            .about__site
+                        .about__socials
+                    .menu

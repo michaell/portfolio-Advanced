@@ -1,34 +1,27 @@
 
 /*-----------------------------layout----------------------------*/
-$container-width: 940px;
-$footer-height: 50px;
+$container-width: 1180px;
+$footer-height: 140px;
 
 /*-----------------------------colors----------------------------*/
-$main-color1: #000000;
-$main-color2: #838383;
-$main-color3: #FFFFFF;
+$blue: #00bfa5;
+$lightBlue: #20b5a1;
+$gray: #455a64;
+$black: #373e42;
+$yellowish: #f0efe9;
 
-$additional-color1: #000000;
-$additional-color2: #838383;
-$additional-color3: #FFFFFF;
 
-$page-background1: $main-color1;
-$page-background2: $main-color1;
-$page-background3: $main-color1;
-
-$headline-color1: $main-color1;
-$headline-color2: $main-color1;
-$headline-color3: $main-color1;
-
-$text-color1: $main-color1;
-$text-color2: $main-color1;
-$text-color3: $main-color1;
 
 /*-----------------------------fonts----------------------------*/
-$headline-font1: 'Varela Round', Helvetica, Arial, sans-serif;
-$headline-font2: 'Varela Round', Helvetica, Arial, sans-serif;
-$headline-font3: 'Varela Round', Helvetica, Arial, sans-serif;
+$RobotoBold: 'Roboto Bold', Helvetica, Arial, sans-serif;
+$RobotoBoldItalic: 'Roboto Bold Italic', Helvetica, Arial, sans-serif;
+$RobotoItalic: 'Roboto Italic', Helvetica, Arial, sans-serif;
+$RobotoLight: 'Roboto Light', Helvetica, Arial, sans-serif;
+$RobotoLightItalic: 'Roboto Light Italic', Helvetica, Arial, sans-serif;
+$RobotoMedium: 'Roboto Medium', Helvetica, Arial, sans-serif;
+$RobotoMediumItalic: 'Roboto Medium Italic', Helvetica, Arial, sans-serif;
+$RobotoRegular: 'Roboto Regular', Helvetica, Arial, sans-serif;
 
-$body-font1: 'Palatino Linotype', Baskerville, serif;
-$body-font2: 'Palatino Linotype', Baskerville, serif;
-$body-font3: 'Palatino Linotype', Baskerville, serif;
+$FontAwesomeWebfont: 'FontAwesome webfont', Baskerville, serif;
+$FontAwesome: 'FontAwesome', Baskerville, serif;
+$Sansus: 'Sansus Webissimo Regular', Baskerville, serif;
