@@ -13,20 +13,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__top-line">
-          <div class="top-line__socials"></div>
-          <div class="top-line__menu"></div>
+      <div class="header__top-line">
+        <div class="header__socials">
+          <ul class="socials">
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="icon" width="31" height="17">
+                  <use xlink:href="assets/images/icons/sprite-header.svg#vk" use=""></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="icon" width="26" height="22">
+                  <use xlink:href="assets/images/icons/sprite-header.svg#git" use=""></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="icon" width="24" height="22">
+                  <use xlink:href="assets/images/icons/sprite-header.svg#in" use=""></use>
+                </svg></a></li>
+          </ul>
         </div>
-        <div class="header__about">
-          <div class="header__portrait">
-            <div class="header__img"><img class="header__pic" src="assets/images/portrait.jpg" alt=""></div>
-          </div>
-          <div class="header__description">
-            <div class="headline__name">Михаил Омелько</div>
-            <div class="headline__about">Личный сайт веб разработчика</div>
+        <div class="header__menu"><a class="hamburger" href="#">
+            <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt=""></div></a></div>
+      </div>
+      <div class="header__about">
+        <div class="title"><img class="title__pic" src="assets/images/icons/portfolio_header.svg"></div>
+        <div class="header__user">
+          <div class="user">
+            <div class="user__portrait">
+              <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt=""></div>
+            </div>
+            <div class="user__description">
+              <div class="user__name">Михаил Омелько</div>
+              <div class="user__about">Личный сайт веб разработчика</div>
+            </div>
           </div>
         </div>
+        <div class="header__scroll-btn"><a class="scroll-down" href="#"><img class="scroll-down-arrow" src="assets/images/icons/arrow_down.svg" alt=""></a></div>
       </div>
     </header>
     <div class="about-section">
@@ -83,21 +103,38 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer__navigation">
-          <div class="footer__menu">
-            <ul class="footer__list">
-              <li class="footer__item"><a class="footer__link" href="my-works.html">Мои работы</a></li>
-              <li class="footer__item"><a class="footer__link" href="about.html">Обо мне</a></li>
-              <li class="footer__item"><a class="footer__link" href="blog.html">Блог</a></li>
-              <li class="footer__item"><a class="footer__link" href="index.html">Авторизация</a></li>
+      <div class="footer-top">
+        <div class="footer-top__navigation">
+          <div class="footer-menu">
+            <ul class="footer-list">
+              <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
             </ul>
           </div>
-          <div class="footer__socials"></div>
+          <div class="footer__socials">
+            <ul class="socials">
+              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                  <svg class="icon" width="36" height="36">
+                    <use xlink:href="assets/images/icons/sprite-footer.svg#vk" use=""></use>
+                  </svg></a></li>
+              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                  <svg class="icon" width="36" height="36">
+                    <use xlink:href="assets/images/icons/sprite-footer.svg#git" use=""></use>
+                  </svg></a></li>
+              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                  <svg class="icon" width="36" height="36">
+                    <use xlink:href="assets/images/icons/sprite-footer.svg#in" use=""></use>
+                  </svg></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__bottom">
-          <div class="footer__bottom-left">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          <div class="footer__bottom-right">&copy Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom--wrapper">
+          <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+          <div class="footer__bot-right">&copy Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
         </div>
       </div>
     </footer>
