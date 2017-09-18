@@ -1,0 +1,62 @@
+extends ../template
+
+block variables
+  - var title = 'Мои работы'
+
+block content
+    include ../common/header.pug
+    .works-section
+        .works-signboard
+            h1.works-headline Мои работы
+        .my-works
+            .my-works__sites
+                .sites-information
+                    .sites-information__site-name Сайт школы онлайн Образования
+                    .sites-information__technologies HTML , CSS, JAVASCRIPT
+                    button.sites-information__button
+                        img(src="assets/images/icons/link.svg")
+                        span.sites-information__button-name Посмотреть сайт
+            .my-works__slider
+        .reviews
+            .reviews__header 
+                .rev-headline Что обо мне говорят
+                .reviews__background
+                    img.reviews__bg(src="assets/images/icons/about_header.svg", alt="")
+            .reviews__block
+                .reviews__item
+                    .review
+                        .review__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .review__sign
+                            .review__portrait
+                                img.review__pic(src="assets/images/koval_portr.jpg")
+                            .review__reviewer-information
+                                .review__reviewer-name Ковальчук Дмитрий
+                                .review__reviewer-position основатель Loftschool
+                        .review__quotations
+                            img.quotation(src="assets/images/quotation.png", alt="")
+                .reviews__item
+                    .review
+                        .review__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .review__sign
+                            .review__portrait
+                                img.review__pic(src="assets/images/sab_portr.jpg")
+                            .review__reviewer-information
+                                .review__reviewer-name Ковальчук Дмитрий
+                                .review__reviewer-position основатель Loftschool
+                        .review__quotations
+                            img.quotation(src="assets/images/quotation.png", alt="")
+            .reviews__form
+                .form-contact
+                    form(class="form" action="" method="post")
+                        .form__head Связаться со мной
+                        .form__inputs
+                            input(class="form__text-input" type="text" placeholder="Имя")
+                            input(class="form__text-input" type="text" placeholder="Email")
+                            input(class="form__textarea" type="textarea" placeholder="Ваше сообщение")
+                        .form__button-wrapper    
+                            .form__buttons
+                                input(class="form__button form__button--left" type="button" value="Отправить")
+                                input(class="form__button form__button--right" type="button" value="Очистить")
+
+        //- include ../common/slider.pug
+    include ../common/footer.pug

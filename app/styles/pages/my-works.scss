@@ -1,0 +1,355 @@
+.works-signboard {
+    background-color: #faf8f0;
+    background-image: url(../images/works_header.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.works-headline {
+    color: $black;
+    font-family: $Bernier;
+    font-size: 63px;
+    font-weight: 400;
+    margin-bottom: 0;
+    @include lines;
+    &:before {
+        left: -40px;
+    }
+    &:after {
+        right: -40px;
+    }
+}
+
+/*----------------------my works----------------*/
+.my-works {
+    display: flex;
+    height: 746px; // delete later
+}
+
+.my-works__sites {
+    background: #efeee9;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sites-information {
+    width: 280px;
+    display: flex;
+    flex-flow: column wrap;
+    // justify-content: center;
+    align-items: center;
+}
+
+.sites-information__site-name {
+    text-align: center;
+    color: $gray;
+    font-family: $Bernier;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 47px;
+    @include lines;
+    &:before {
+        left: -33px;
+        top: 20px;
+    }
+    &:after {
+        left: 290px;
+        top: 20px;
+    }
+}
+
+.sites-information__technologies {
+    color: $lightBlue;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 53px;
+    position: relative;
+    &:after {
+        content:"";
+        display: block;
+        width: 420px;
+        height: 1px;
+        opacity: 0.3;
+        background-color: #009688;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35px;
+    }
+    &:before {
+        content:"";
+        display: block;
+        width: 420px;
+        height: 1px;
+        opacity: 0.3;
+        background-color: #009688;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+    }
+}
+
+.sites-information__button {
+    border: 0;
+    background-color: #00bfa5;
+    border-radius: 5px; 
+    color: white;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    width: 200px;
+    transition: all .3s ease;
+    &:hover {
+        background-color: #009688;
+    }
+}
+
+.sites-information__button-name {
+    margin-left: 9px;
+}
+
+.my-works__slider {
+    background: #eeebdf;
+    width: 50%;
+    padding-top: 20px;
+}
+/*---------------------- end of my works----------------*/
+
+
+/*----------------------reviews----------------*/
+.reviews {
+    background: url(../images/works_bg.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.reviews__header {
+    width: 358px;
+    margin: 60px auto 110px;
+    position: relative;
+}
+
+.reviews__background {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reviews__bg {
+    opacity: 0.06;
+}
+
+.rev-headline {
+    color: $black;
+    font-family: $Bernier;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    text-align: center;
+    @include lines;
+    &:before {
+        left: -42px;
+        top: 35px;
+    }
+    &:after {
+        right: -36px;
+        top: 35px;
+    }
+}
+
+.reviews__block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+// .reviews__review {
+//     width: 50%;
+// }
+.reviews__item {
+    width: 380px;
+    margin-right: 20px;
+    // display: flex;
+    // flex-flow: column nowrap;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+ 
+.review {
+    position: relative;
+}
+.review__sign {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.review__portrait {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.review__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review__text {
+    color: $gray;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 20px;
+}
+
+.review__portrait {
+    
+}
+
+.review__reviewer-information {
+    color: $lightBlue;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.review__reviewer-name  {
+    font-weight: 700;
+}
+
+.review__reviewer-position  {
+    font-weight: 400;
+}
+
+.review__quotations {
+    position: absolute;
+    top: -53px;
+    left: 0;
+    opacity: 0.2;
+}
+
+// /*----------------------end of reviews----------------*/
+
+// /*----------------------form----------------*/
+
+.reviews__form {
+    margin-bottom: 182px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.form-contact {
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.73);
+    padding: 20px;
+    border-radius: 5px;
+    padding: 23px 20px 46px;
+}
+
+.form__head {
+    text-align: center;
+    margin-bottom: 27px;
+
+    
+    color: $gray;
+    font-family: $Bernier;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.form__inputs {
+    display: flex;
+    flex-flow: column;
+}
+
+.form__text-input::placeholder {
+    padding-left: 20px;
+}
+
+// .form__textarea::placeholder {
+//     // margin-top: -20px;
+//     // padding-left: 20px;
+//     text-indent: 40px;
+//     vertical-align: middle;
+//     color: red;
+// }
+
+
+.form__buttons {
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.form__textarea {
+    height: 140px;
+}
+
+.form__button-wrapper {
+    position: absolute;
+    bottom: -46px;
+    width: 380px;
+    left: -20px;
+}
+
+.form__button {
+    width: 50%;
+    background-color: $lightBlue;
+    border: 0;
+    color: white;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 5px 31px;
+    font-family: "Roboto";
+    border-right: 2px solid rgba(222,227,231,.5);
+    transition: all .3s ease;
+    &:last-child {
+        border-right: 0;
+    }
+    &:hover {
+        background-color: rgba(0, 150, 136, .8);
+    }
+}
+.form__text-input, .form__textarea {
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 20px;
+} 
+
+.form__text-input {
+    height: 45px;
+}
+
+.form__button--left {
+    border-bottom-left-radius: 5px;
+}
+
+.form__button--right {
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,43 @@
+extends ../template
+
+block variables
+  - var title = 'Обо мне'
+
+block content
+    .welcome
+        .welcome-top
+            .welcome-top__button
+                button.auth-btn Авторизоваться
+        .central-block
+            .information
+                .about
+                    .about__portrait
+                        .about__img
+                            img.about__pic(src="assets/images/portrait.jpg", alt="")
+                    .about__name Михаил Омелько
+                    .about__site Личный сайт веб-разработчика
+                .socials
+                        ul.socials
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon.icon--welcome(width="31", height="17")
+                                        use(xlink:href='assets/images/icons/sprite-header.svg#vk', use='')
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon.icon--welcome(width="26", height="22")
+                                        use(xlink:href='assets/images/icons/sprite-header.svg#git', use='')
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon.icon--welcome(width="24", height="22")
+                                        use(xlink:href='assets/images/icons/sprite-header.svg#in', use='')
+            .menu
+                ul.menu-list
+                    li.menu-item
+                        a.menu-link(href="my-works.html") Мои работы
+                    li.menu-item
+                        a.menu-link(href="about.html") Обо мне
+                    li.menu-item
+                        a.menu-link(href="blog.html") Блог
+        .welcome-footer
+            .welcome-footer__copyright 
+                .copyright &copy Михаил Омелько | создано с любовью в LoftSchool | 2017

@@ -1,0 +1,64 @@
+extends ../template
+
+block variables
+  - var title = 'Обо мне'
+  - var headline = 'Обо мне'
+
+block content
+    include ../common/header.pug
+    .about-section
+        .about-section__about-me
+            .about-me
+                .about-me__headline
+                    .about-me__headline-wrapper
+                        .about-headline Обо мне
+                    .about-me__background-wrapper
+                        img.about-background(src="assets/images/icons/about_header.svg", alt="")
+                .about-me__description
+                    .who-is-me
+                        .who-is-me__portrait
+                            img.who-is-me__img(src="assets/images/portrait.jpg", alt="")
+                        .who-is-me__description
+                            .about-description
+                                .about-description__header
+                                    .about-header Кто я
+                                .about-description__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!        
+        .about-section__skills
+            .skills
+                .skills__description
+                    .skills__header
+                        .skills-headline Чем я могу быть вам полезен                     
+                    .skills__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                .skills__technologies
+                    .skills__frontend
+                        h3.skills__name Frontend
+                        .skills__diagramms
+                    .skills__backend
+                        h3.skills__name Backend
+                        .skills__diagramms
+                    .skills__workflow
+                        h3.skills__name Workflow
+                        .skills__diagramms
+    .map
+        .map-contacts
+            .contacts__header
+                h2.contacts__headline Контакты
+            ul.contacts__list
+                li.contacts__item
+                    svg.icon.icon--map(width="24", height="24")
+                        use(xlink:href='assets/images/icons/sprite-about.svg#skype', use='')
+                    span.contacts__text skype_kdn
+                li.contacts__item 
+                    svg.icon.icon--map(width="23", height="17")
+                        use(xlink:href='assets/images/icons/sprite-about.svg#mail', use='')
+                    span.contacts__text omelkom@gmail.com
+                li.contacts__item
+                    svg.icon.icon--map(width="19", height="18")
+                        use(xlink:href='assets/images/icons/sprite-about.svg#phone', use='')
+                    span.contacts__text +7(924)230-53-85
+                li.contacts__item
+                    svg.icon.icon--map(width="19", height="24")
+                        use(xlink:href='assets/images/icons/sprite-about.svg#marker', use='')
+                    span.contacts__text г. Владивосток 
+        //- include ../common/technologies.pug
+    include ../common/footer.pug

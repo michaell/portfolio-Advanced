@@ -1,0 +1,37 @@
+header.header
+    .header__top-line
+        .header__socials
+            ul.socials
+                //- each item in ['vk', 'tw', 'in']
+                //-     li.socials__item
+                //-         a(href="#").socials__link
+                li.socials__item
+                    a.socials__link(href="#")
+                        svg.icon(width="31", height="17")
+                            use(xlink:href='assets/images/icons/sprite-header.svg#vk', use='')
+                li.socials__item
+                    a.socials__link(href="#")
+                        svg.icon(width="26", height="22")
+                            use(xlink:href='assets/images/icons/sprite-header.svg#git', use='')
+                li.socials__item
+                    a.socials__link(href="#")
+                        svg.icon(width="24", height="22")
+                            use(xlink:href='assets/images/icons/sprite-header.svg#in', use='')
+        .header__menu
+            a.hamburger(href="#")
+                .hamburger__pic
+                    img.hamburger__img(src="assets/images/icons/hamburger.svg", alt="")
+    .header__about
+        .title
+            img.title__pic(src="assets/images/icons/portfolio_header.svg")
+        .header__user
+            .user
+                .user__portrait
+                    .user__img
+                        img.user__pic(src="assets/images/portrait.jpg", alt="")
+                .user__description
+                    .user__name Михаил Омелько
+                    .user__about Личный сайт веб разработчика
+        .header__scroll-btn
+            a.scroll-down(href="#")
+                img.scroll-down-arrow(src="assets/images/icons/arrow_down.svg", alt="")
