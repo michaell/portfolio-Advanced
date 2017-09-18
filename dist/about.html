@@ -50,41 +50,50 @@
       </div>
     </header>
     <div class="about-section">
-      <div class="about-me">
-        <div class="about-me__about">
-          <div class="about-me__headline-wrapper">
-            <h1 class="about-headline">Обо мне</h1>
-          </div>
-          <div class="about-me__portrait">
-            <div class="about-me__pic"><img class="about-me__img" src="assets/images/portrait.jpg" alt=""></div>
+      <div class="about-section__about-me">
+        <div class="about-me">
+          <div class="about-me__headline">
+            <div class="about-me__headline-wrapper">
+              <div class="about-headline">Обо мне</div>
+            </div>
+            <div class="about-me__background-wrapper"><img class="about-background" src="assets/images/icons/about_header.svg" alt=""></div>
           </div>
           <div class="about-me__description">
-            <div class="about-me__header">
-              <h2 class="about-me__headline">Кто я</h2>
+            <div class="who-is-me">
+              <div class="who-is-me__portrait"><img class="who-is-me__img" src="assets/images/portrait.jpg" alt=""></div>
+              <div class="who-is-me__description">
+                <div class="about-description">
+                  <div class="about-description__header">
+                    <div class="about-header">Кто я</div>
+                  </div>
+                  <div class="about-description__text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!        </div>
+                </div>
+              </div>
             </div>
-            <div class="about-me__text">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</div>
           </div>
         </div>
       </div>
-      <div class="skills">
-        <div class="skills__description">
-          <div class="skills__header">
-            <h2 class="skills__headline">Чем я могу быть вам полезен</h2>
+      <div class="about-section__skills">
+        <div class="skills">
+          <div class="skills__description">
+            <div class="skills__header">
+              <div class="skills-headline">Чем я могу быть вам полезен                     </div>
+            </div>
+            <div class="skills__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</div>
           </div>
-          <div class="skills__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</div>
-        </div>
-        <div class="skills__technologies">
-          <div class="skills__frontend">
-            <h3 class="skills__name">Frontend</h3>
-            <div class="skills__diagramms"></div>
-          </div>
-          <div class="skills__backend">
-            <h3 class="skills__name">Backend</h3>
-            <div class="skills__diagramms"></div>
-          </div>
-          <div class="skills__workflow">
-            <h3 class="skills__name">Workflow</h3>
-            <div class="skills__diagramms"></div>
+          <div class="skills__technologies">
+            <div class="skills__frontend">
+              <h3 class="skills__name">Frontend</h3>
+              <div class="skills__diagramms"></div>
+            </div>
+            <div class="skills__backend">
+              <h3 class="skills__name">Backend</h3>
+              <div class="skills__diagramms"></div>
+            </div>
+            <div class="skills__workflow">
+              <h3 class="skills__name">Workflow</h3>
+              <div class="skills__diagramms"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -95,10 +104,26 @@
           <h2 class="contacts__headline">Контакты</h2>
         </div>
         <ul class="contacts__list">
-          <li class="contacts__item"><a class="contacts__link" href="#">skype_kdn</a></li>
-          <li class="contacts__item"><a class="contacts__link" href="#">omelkom@gmail.com</a></li>
-          <li class="contacts__item"><a class="contacts__link" href="#">+7(924)230-53-85</a></li>
-          <li class="contacts__item"><a class="contacts__link" href="#">г. Владитвосток</a></li>
+          <li class="contacts__item">
+            <svg class="icon icon--map" width="24" height="24">
+              <use xlink:href="assets/images/icons/sprite-about.svg#skype" use=""></use>
+            </svg><span class="contacts__text">skype_kdn</span>
+          </li>
+          <li class="contacts__item"> 
+            <svg class="icon icon--map" width="23" height="17">
+              <use xlink:href="assets/images/icons/sprite-about.svg#mail" use=""></use>
+            </svg><span class="contacts__text">omelkom@gmail.com</span>
+          </li>
+          <li class="contacts__item">
+            <svg class="icon icon--map" width="19" height="18">
+              <use xlink:href="assets/images/icons/sprite-about.svg#phone" use=""></use>
+            </svg><span class="contacts__text">+7(924)230-53-85</span>
+          </li>
+          <li class="contacts__item">
+            <svg class="icon icon--map" width="19" height="24">
+              <use xlink:href="assets/images/icons/sprite-about.svg#marker" use=""></use>
+            </svg><span class="contacts__text">г. Владивосток </span>
+          </li>
         </ul>
       </div>
     </div>
