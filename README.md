@@ -1,13 +1,12 @@
 #### Описание сборки ####
-1. Для компиляции Pug файлов используется плагин gulp-pug
-2. Для компиляции и обработки и сжатия Sass файлов используются:
-    2.1. gulp-sass.
-    2.2. gulp-rename.
-    2.3. gulp-sourcemaps.
-    2.4. gulp-autoprefixer.
-    2.5. gulp-csso.
-    2.6. gulp-plumber.
-3. Для работы с javascript используется webpack.
-    3.1. webpack.
-    3.2. gulp-webpack.
-    3.3. uglifyjs-webpack-plugin
+Сайт-портфолио с курса "Продвинутая веб-разработка". Тема - горы.
+
+Школа 'Lofschool', 09/2017
+
+Студент: Омелько Михаил. 
+
+Наставник: Юрий Кучма.
+
+Сайт на GitHub pages:
+
+https://michaell.github.io/portfolio-Advanced/dist/index.html
