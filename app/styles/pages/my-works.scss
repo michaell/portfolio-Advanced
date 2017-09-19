@@ -1,3 +1,42 @@
+.traingle {
+    position: absolute;
+    top: 605px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-99%);
+    fill: #fff;
+    width: 100%;
+}
+  
+.traingle .left {
+    fill: #faf8f0;
+}
+
+.traingle .right {
+    fill: #faf8f0;
+}
+
+.triangle-section--about-page {
+    .traingle .left {
+        fill: #efeee9;
+    }
+        .traingle .right {
+        fill: #eeebdf;
+    }
+}
+
+.triangle-section--blog-page {
+    .traingle {
+        top: 400px;
+    }
+    .traingle .left {
+        fill: #ffffff;
+    }
+        .traingle .right {
+        fill: #ffffff;
+    }
+}
+
 .works-signboard {
     background-color: #faf8f0;
     background-image: url(../images/works_header.png);

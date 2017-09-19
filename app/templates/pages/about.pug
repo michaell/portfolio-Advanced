@@ -6,6 +6,10 @@ block variables
 
 block content
     include ../common/header.pug
+    .triangle-section.triangle-section--about-page
+        svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+            polygon.left(points='0,0   0,86   500.8,86   500.8,75.5')
+            polygon.right(points='1000,0   1000,86   500,86   500,75.5')
     .about-section
         .about-section__about-me
             .about-me
