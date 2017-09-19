@@ -14,26 +14,26 @@ block content
                     .sites-information__site-name Сайт школы онлайн Образования
                     .sites-information__technologies HTML , CSS, JAVASCRIPT
                     button.sites-information__button
-                        img(src="assets/images/icons/link.svg")
+                        img(src="assets/images/icons/link.svg" alt="link icon")
                         span.sites-information__button-name Посмотреть сайт
             .my-works__slider
         .reviews
             .reviews__header 
                 .rev-headline Что обо мне говорят
                 .reviews__background
-                    img.reviews__bg(src="assets/images/icons/about_header.svg", alt="")
+                    img.reviews__bg(src="assets/images/icons/about_header.svg", alt="background image")
             .reviews__block
                 .reviews__item
                     .review
                         .review__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .review__sign
                             .review__portrait
-                                img.review__pic(src="assets/images/koval_portr.jpg")
+                                img.review__pic(src="assets/images/koval_portr.jpg" alt="Dmitrii Kovalchuk portrait")
                             .review__reviewer-information
                                 .review__reviewer-name Ковальчук Дмитрий
                                 .review__reviewer-position основатель Loftschool
                         .review__quotations
-                            img.quotation(src="assets/images/quotation.png", alt="")
+                            img.quotation(src="assets/images/quotation.png", alt="quotation")
                 .reviews__item
                     .review
                         .review__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
@@ -41,10 +41,10 @@ block content
                             .review__portrait
                                 img.review__pic(src="assets/images/sab_portr.jpg")
                             .review__reviewer-information
-                                .review__reviewer-name Ковальчук Дмитрий
-                                .review__reviewer-position основатель Loftschool
+                                .review__reviewer-name Виктор Сабанцев
+                                .review__reviewer-position преподаватель Loftschool
                         .review__quotations
-                            img.quotation(src="assets/images/quotation.png", alt="")
+                            img.quotation(src="assets/images/quotation.png", alt="Victor Sabantsev portrait")
             .reviews__form
                 .form-contact
                     form(class="form" action="" method="post")
@@ -52,7 +52,8 @@ block content
                         .form__inputs
                             input(class="form__text-input" type="text" placeholder="Имя")
                             input(class="form__text-input" type="text" placeholder="Email")
-                            input(class="form__textarea" type="textarea" placeholder="Ваше сообщение")
+                            //- input(class="form__textarea" type="textarea" placeholder="Ваше сообщение")
+                            textarea(class="form__textarea" name="textarea", cols="30", rows="10" placeholder="Ваше сообщение")
                         .form__button-wrapper    
                             .form__buttons
                                 input(class="form__button form__button--left" type="button" value="Отправить")

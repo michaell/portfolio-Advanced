@@ -291,13 +291,9 @@
     padding-left: 20px;
 }
 
-// .form__textarea::placeholder {
-//     // margin-top: -20px;
-//     // padding-left: 20px;
-//     text-indent: 40px;
-//     vertical-align: middle;
-//     color: red;
-// }
+.form__textarea::placeholder {
+    padding-left: 20px;
+}
 
 
 .form__buttons {
