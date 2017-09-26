@@ -1,3 +1,4 @@
+/*----------------------header--------------------*/
 .header__top-line--blog {
     margin: 0 22px 94px;
 }
@@ -30,17 +31,24 @@
 .user__about--blog {
     margin-bottom: 66px;
 }
-
+/*----------------------blog content--------------------*/
 .blog-content {
     position: relative;
     margin-top: 63px;
     display: flex;
-
 }
 
 .content__list {
     width: 880px;
     order: 2;
+    @include laptops {
+        width: 680px;
+        margin-left: 120px;
+    }
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .content-list__item {
@@ -94,12 +102,23 @@
     line-height: 26px;
 }
 
+.article__pic {
+    width: 100%;
+}
+
 .sidebar {
     width: 280px;
     margin-left: -217px;
     margin-right: 136px;
     margin-top: 16px;
     order: 1;
+    @include laptops {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    @include tablets {
+        display: none;
+    }
 }
 
 .side-nav {

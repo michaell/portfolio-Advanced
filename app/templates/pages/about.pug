@@ -34,15 +34,66 @@ block content
                         .skills-headline Чем я могу быть вам полезен                     
                     .skills__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
                 .skills__technologies
-                    .skills__frontend
-                        h3.skills__name Fronten
-                        .skills__diagramms
-                    .skills__backend
-                        h3.skills__name Backend
-                        .skills__diagramms
-                    .skills__workflow
-                        h3.skills__name Workflow
-                        .skills__diagramms
+                    ul.skills-list
+                        li.skills-list__item 
+                            h3.skills-list__name Frontend
+                            ul.skills-list__diagrams
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-85(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title HTML5
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-80(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title CSS3
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-40(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title JavaScript &amp; JQuery
+                        li.skills-list__item
+                            h3.skills-list__name Backend
+                            ul.skills-list__diagrams
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-10(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title PHP
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-10(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title mySQL
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-10(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title Node.js &amp; npm
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-0(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title Mango.db
+                        li.skills-list__item        
+                            h3.skills-list__name Workflow
+                            ul.skills-list__diagrams
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-60(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title Git
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-40(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title Gulp
+                                li.skills-list__diagram-item
+                                    svg.circles(viewbox='0 0 110 110')
+                                        circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                        circle.circle__second.circle-30(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
+                                    span.skills-list__title Bower
     .map
         .map-contacts
             .contacts__header

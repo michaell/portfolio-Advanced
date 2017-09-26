@@ -12,124 +12,126 @@
     <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__top-line header__top-line--blog">
-          <div class="header__socials">
-            <ul class="socials">
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon" width="31" height="17">
-                    <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon" width="26" height="22">
-                    <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="#">
-                  <svg class="icon" width="24" height="22">
-                    <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
-                  </svg></a></li>
-            </ul>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top-line header__top-line--blog">
+            <div class="header__socials">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="icon" width="31" height="17">
+                      <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="icon" width="26" height="22">
+                      <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="icon" width="24" height="22">
+                      <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="header__menu"><a class="hamburger" href="#">
+                <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="menu"></div></a></div>
           </div>
-          <div class="header__menu"><a class="hamburger" href="#">
-              <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="menu"></div></a></div>
-        </div>
-        <div class="header__about">
-          <div class="title"><img class="title__pic" src="assets/images/icons/blog_header.svg" alt="background"></div>
-          <div class="header__user header__user--blog">
-            <div class="user">
-              <div class="user__portrait user__portrait--blog">
-                <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt="portrait"></div>
-              </div>
-              <div class="user__description">
-                <div class="user__headline">Блог</div>
-                <div class="user__about user__about--blog">Статьи, которые я написал</div>
+          <div class="header__about">
+            <div class="title"><img class="title__pic" src="assets/images/icons/blog_header.svg" alt="background"></div>
+            <div class="header__user header__user--blog">
+              <div class="user">
+                <div class="user__portrait user__portrait--blog">
+                  <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt="portrait"></div>
+                </div>
+                <div class="user__description">
+                  <div class="user__headline">Блог</div>
+                  <div class="user__about user__about--blog">Статьи, которые я написал</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </header>
+      <div class="triangle-section triangle-section--blog-page">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
       </div>
-    </header>
-    <div class="triangle-section triangle-section--blog-page">
-      <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
-        <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-        <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-      </svg>
-    </div>
-    <div class="container">
-      <div class="blog-content">
-        <div class="content__list">
-          <ul class="content-list">
-            <li class="content-list__item">
-              <article class="article">
-                <div class="article__head">
-                  <h1 class="article__headline">Самое важное в SASS</h1>
-                </div>
-                <div class="article__date">11 сентября 2017</div>
-                <div class="article__description"> 
-                  <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at rerum eligendi quae nisi nesciunt delectus! Enim doloribus laborum sit error nemo corporis officiis atque perferendis voluptas! Mollitia architecto, corrupti repellat soluta nulla rem ipsum illum officia optio neque numquam illo, doloribus odio ex unde laboriosam odit quibusdam eveniet minima culpa commodi sequi. Consectetur voluptatibus aut ducimus nulla? Consequatur exercitationem laboriosam nobis ipsum illo aliquid magni similique placeat, eos excepturi vitae hic eum inventore facilis. Pariatur nobis recusandae explicabo porro sequi quae rerum reiciendis maxime distinctio eius dolore fuga debitis labore voluptas, officiis cupiditate voluptatem praesentium molestiae eveniet asperiores magnam corrupti nulla? Illo rerum vero aperiam! Accusamus dolores velit recusandae quod dolorum ipsam mollitia, vero earum, debitis libero dicta vel!</p>
-                </div>
-                <div class="article__img"><img class="article__pic" src="assets/images/blog_screenshot.jpg" alt="screenshot"></div>
-              </article>
-            </li>
-            <li class="content-list__item"> 
-              <article class="article">
-                <div class="article__head">
-                  <h1 class="article__headline">Приёмы в верстке, необходимые для любого сайта.</h1>
-                </div>
-                <div class="article__date">10 сентября 2017</div>
-                <div class="article__description"> 
-                  <p class="article__text">Lore ipsum dolor, sit amet consectetur adipisicing elit. Maxime veniam explicabo necessitatibus dignissimos, cupiditate placeat voluptatem, cumque optio labore modi ipsam, sapiente vero aliquid ea iure laudantium quo tempore? Omnis accusantium veritatis officia ex nihil molestias eius. Minus itaque quibusdam facere repellendus! Ex alias incidunt vitae maiores nemo ab qui voluptas esse! Aliquam omnis quo officia, animi temporibus vitae nihil sapiente suscipit ducimus nulla eum quisquam commodi, ipsa iusto, numquam facere. Laborum ipsa modi, ad laboriosam, asperiores mollitia quis, vitae blanditiis repellat sit recusandae illum nihil quos officiis tenetur magni dicta odit veritatis. Repudiandae dignissimos ut rem modi hic eum, maxime ipsam, temporibus nulla recusandae tempora ea nisi quas enim fugiat perferendis vel totam doloremque quod quia. Ea quia sit veniam numquam repudiandae est illo odio eos quisquam sint. Aliquam maiores, iusto dolorum quos, cumque tenetur quis voluptate ab incidunt, quas soluta. Cumque illum aliquid nihil ut aliquam distinctio nemo consequuntur, sit fugiat corporis culpa quidem eligendi facilis deserunt cum autem fuga, dolore atque eaque, totam veniam consequatur voluptatum veritatis doloribus! Laudantium maiores aliquam atque impedit tenetur explicabo distinctio tempore sed eos ratione magnam rerum molestiae, obcaecati repudiandae beatae quia nostrum aliquid id consequatur animi ullam provident. Ea, doloremque repellat?</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-        <aside class="sidebar">
-          <ul class="side-nav">
-            <li class="side-nav__item"><a class="side-nav__link" href="#">Самое важное в SASS</a></li>
-            <li class="side-nav__item"><a class="side-nav__link" href="#">Приёмы в верстке, необходимые для любого сайта.</a></li>
-            <li class="side-nav__item"><a class="side-nav__link" href="#">Самый необходимый набор Gulp плагинов</a></li>
-            <li class="side-nav__item"><a class="side-nav__link" href="#">Почему я выбрал Pug</a></li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-top__navigation">
-          <div class="footer-menu">
-            <ul class="footer-list">
-              <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
+      <div class="container">
+        <div class="blog-content">
+          <div class="content__list">
+            <ul class="content-list">
+              <li class="content-list__item">
+                <article class="article">
+                  <div class="article__head">
+                    <h1 class="article__headline">Самое важное в SASS</h1>
+                  </div>
+                  <div class="article__date">11 сентября 2017</div>
+                  <div class="article__description"> 
+                    <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at rerum eligendi quae nisi nesciunt delectus! Enim doloribus laborum sit error nemo corporis officiis atque perferendis voluptas! Mollitia architecto, corrupti repellat soluta nulla rem ipsum illum officia optio neque numquam illo, doloribus odio ex unde laboriosam odit quibusdam eveniet minima culpa commodi sequi. Consectetur voluptatibus aut ducimus nulla? Consequatur exercitationem laboriosam nobis ipsum illo aliquid magni similique placeat, eos excepturi vitae hic eum inventore facilis. Pariatur nobis recusandae explicabo porro sequi quae rerum reiciendis maxime distinctio eius dolore fuga debitis labore voluptas, officiis cupiditate voluptatem praesentium molestiae eveniet asperiores magnam corrupti nulla? Illo rerum vero aperiam! Accusamus dolores velit recusandae quod dolorum ipsam mollitia, vero earum, debitis libero dicta vel!</p>
+                  </div>
+                  <div class="article__img"><img class="article__pic" src="assets/images/blog_screenshot.jpg" alt="screenshot"></div>
+                </article>
+              </li>
+              <li class="content-list__item"> 
+                <article class="article">
+                  <div class="article__head">
+                    <h1 class="article__headline">Приёмы в верстке, необходимые для любого сайта.</h1>
+                  </div>
+                  <div class="article__date">10 сентября 2017</div>
+                  <div class="article__description"> 
+                    <p class="article__text">Lore ipsum dolor, sit amet consectetur adipisicing elit. Maxime veniam explicabo necessitatibus dignissimos, cupiditate placeat voluptatem, cumque optio labore modi ipsam, sapiente vero aliquid ea iure laudantium quo tempore? Omnis accusantium veritatis officia ex nihil molestias eius. Minus itaque quibusdam facere repellendus! Ex alias incidunt vitae maiores nemo ab qui voluptas esse! Aliquam omnis quo officia, animi temporibus vitae nihil sapiente suscipit ducimus nulla eum quisquam commodi, ipsa iusto, numquam facere. Laborum ipsa modi, ad laboriosam, asperiores mollitia quis, vitae blanditiis repellat sit recusandae illum nihil quos officiis tenetur magni dicta odit veritatis. Repudiandae dignissimos ut rem modi hic eum, maxime ipsam, temporibus nulla recusandae tempora ea nisi quas enim fugiat perferendis vel totam doloremque quod quia. Ea quia sit veniam numquam repudiandae est illo odio eos quisquam sint. Aliquam maiores, iusto dolorum quos, cumque tenetur quis voluptate ab incidunt, quas soluta. Cumque illum aliquid nihil ut aliquam distinctio nemo consequuntur, sit fugiat corporis culpa quidem eligendi facilis deserunt cum autem fuga, dolore atque eaque, totam veniam consequatur voluptatum veritatis doloribus! Laudantium maiores aliquam atque impedit tenetur explicabo distinctio tempore sed eos ratione magnam rerum molestiae, obcaecati repudiandae beatae quia nostrum aliquid id consequatur animi ullam provident. Ea, doloremque repellat?</p>
+                  </div>
+                </article>
+              </li>
             </ul>
           </div>
-          <div class="footer__socials">
-            <ul class="socials">
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
-                  </svg></a></li>
+          <aside class="sidebar">
+            <ul class="side-nav">
+              <li class="side-nav__item"><a class="side-nav__link" href="#">Самое важное в SASS</a></li>
+              <li class="side-nav__item"><a class="side-nav__link" href="#">Приёмы в верстке, необходимые для любого сайта.</a></li>
+              <li class="side-nav__item"><a class="side-nav__link" href="#">Самый необходимый набор Gulp плагинов</a></li>
+              <li class="side-nav__item"><a class="side-nav__link" href="#">Почему я выбрал Pug</a></li>
             </ul>
+          </aside>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__navigation">
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom--wrapper">
-          <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+        <div class="footer-bottom">
+          <div class="footer-bottom--wrapper">
+            <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+            <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -12,151 +12,181 @@
     <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__top-line">
-        <div class="header__socials">
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="31" height="17">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="26" height="22">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="24" height="22">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <div class="header__menu"><a class="hamburger" href="#">
-            <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="background"></div></a></div>
-      </div>
-      <div class="header__about">
-        <div class="title"><img class="title__pic" src="assets/images/icons/portfolio_header.svg" alt="background"></div>
-        <div class="header__user">
-          <div class="user">
-            <div class="user__portrait">
-              <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt=""></div>
-            </div>
-            <div class="user__description">
-              <div class="user__name">Михаил Омелько</div>
-              <div class="user__about">Личный сайт веб разработчика</div>
-            </div>
-          </div>
-        </div>
-        <div class="header__scroll-btn"><a class="scroll-down" href="#"><img class="scroll-down-arrow" src="assets/images/icons/arrow_down.svg" alt=""></a></div>
-      </div>
-    </header>
-    <div class="triangle-section">
-      <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
-        <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-        <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-      </svg>
-    </div>
-    <div class="works-section">
-      <div class="works-signboard">
-        <h1 class="works-headline">Мои работы</h1>
-      </div>
-      <div class="my-works">
-        <div class="my-works__sites">
-          <div class="sites-information">
-            <div class="sites-information__site-name">Сайт школы онлайн Образования</div>
-            <div class="sites-information__technologies">HTML , CSS, JAVASCRIPT</div>
-            <button class="sites-information__button"><img src="assets/images/icons/link.svg" alt="link icon"><span class="sites-information__button-name">Посмотреть сайт</span></button>
-          </div>
-        </div>
-        <div class="my-works__slider"></div>
-      </div>
-      <div class="reviews">
-        <div class="reviews__header"> 
-          <div class="rev-headline">Что обо мне говорят</div>
-          <div class="reviews__background"><img class="reviews__bg" src="assets/images/icons/about_header.svg" alt="background image"></div>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__item">
-            <div class="review">
-              <div class="review__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-              <div class="review__sign">
-                <div class="review__portrait"><img class="review__pic" src="assets/images/koval_portr.jpg" alt="Dmitrii Kovalchuk portrait"></div>
-                <div class="review__reviewer-information">
-                  <div class="review__reviewer-name">Ковальчук Дмитрий</div>
-                  <div class="review__reviewer-position">основатель Loftschool</div>
-                </div>
-              </div>
-              <div class="review__quotations"><img class="quotation" src="assets/images/quotation.png" alt="quotation"></div>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <div class="review">
-              <div class="review__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
-              <div class="review__sign">
-                <div class="review__portrait"><img class="review__pic" src="assets/images/sab_portr.jpg" alt="portrait"></div>
-                <div class="review__reviewer-information">
-                  <div class="review__reviewer-name">Виктор Сабанцев</div>
-                  <div class="review__reviewer-position">преподаватель Loftschool</div>
-                </div>
-              </div>
-              <div class="review__quotations"><img class="quotation" src="assets/images/quotation.png" alt="Victor Sabantsev portrait"></div>
-            </div>
-          </div>
-        </div>
-        <div class="reviews__form">
-          <div class="form-contact">
-            <form class="form" action="" method="post">
-              <div class="form__head">Связаться со мной</div>
-              <div class="form__inputs">
-                <input class="form__text-input" type="text" placeholder="Имя">
-                <input class="form__text-input" type="text" placeholder="Email">
-                <textarea class="form__textarea" name="textarea" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-              </div>
-              <div class="form__button-wrapper">   
-                <div class="form__buttons">
-                  <input class="form__button form__button--left" type="button" value="Отправить">
-                  <input class="form__button form__button--right" type="button" value="Очистить">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-top__navigation">
-          <div class="footer-menu">
-            <ul class="footer-list">
-              <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
-            </ul>
-          </div>
-          <div class="footer__socials">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-line">
+          <div class="header__socials">
             <ul class="socials">
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="31" height="17">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
                   </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="26" height="22">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
                   </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="24" height="22">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
                   </svg></a></li>
             </ul>
           </div>
+          <div class="header__menu"><a class="hamburger" href="#">
+              <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="background"></div></a></div>
+        </div>
+        <div class="header__about">
+          <div class="title"><img class="title__pic" src="assets/images/icons/portfolio_header.svg" alt="background"></div>
+          <div class="header__user">
+            <div class="user">
+              <div class="user__portrait">
+                <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt=""></div>
+              </div>
+              <div class="user__description">
+                <div class="user__name">Михаил Омелько</div>
+                <div class="user__about">Личный сайт веб разработчика</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__scroll-btn"><a class="scroll-down" href="#"><img class="scroll-down-arrow" src="assets/images/icons/arrow_down.svg" alt=""></a></div>
+        </div>
+      </header>
+      <div class="triangle-section">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
+      </div>
+      <div class="works-section">
+        <div class="works-signboard">
+          <h1 class="works-headline">Мои работы</h1>
+        </div>
+        <div class="my-works">
+          <div class="my-works__sites">
+            <div class="sites-information">
+              <div class="sites-information__site-name">Сайт школы онлайн Образования</div>
+              <div class="sites-information__technologies">HTML , CSS, JAVASCRIPT</div>
+              <button class="sites-information__button"><img src="assets/images/icons/link.svg" alt="link icon"><span class="sites-information__button-name">Посмотреть сайт</span></button>
+            </div>
+          </div>
+          <div class="my-works__slider">
+            <div class="my-works__site-preview">
+              <ul class="site-preview">
+                <li class="site-preview__prev-item">
+                  <div class="site-preview__prev-img"><img class="site-preview__prev-pic" src="assets/images/site_prev.png" alt="site preview"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="my-works__slider-buttons">
+              <div class="slider-buttons">
+                <div class="my-works__left-button">
+                  <div class="arrow-down"></div>
+                  <ul class="left-button">
+                    <li class="button-item">
+                      <div class="button-item__pic"><img class="button-item__img" src="assets/images/slider-prev.jpg" alt="slider button"></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-works__right-button">
+                  <div class="arrow-up"></div>
+                  <ul class="right-button">
+                    <li class="button-item">
+                      <div class="button-item__pic"><img class="button-item__img" src="assets/images/slider-next.jpg" alt="slider button"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="reviews__header"> 
+            <div class="rev-headline">Что обо мне говорят</div>
+            <div class="reviews__background"><img class="reviews__bg" src="assets/images/icons/about_header.svg" alt="background image"></div>
+          </div>
+          <div class="reviews__block">
+            <div class="reviews__item">
+              <div class="review">
+                <div class="review__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="review__sign">
+                  <div class="review__portrait"><img class="review__pic" src="assets/images/koval_portr.jpg" alt="Dmitrii Kovalchuk portrait"></div>
+                  <div class="review__reviewer-information">
+                    <div class="review__reviewer-name">Ковальчук Дмитрий</div>
+                    <div class="review__reviewer-position">основатель Loftschool</div>
+                  </div>
+                </div>
+                <div class="review__quotations"><img class="quotation" src="assets/images/quotation.png" alt="quotation"></div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="review">
+                <div class="review__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                <div class="review__sign">
+                  <div class="review__portrait"><img class="review__pic" src="assets/images/sab_portr.jpg" alt="portrait"></div>
+                  <div class="review__reviewer-information">
+                    <div class="review__reviewer-name">Виктор Сабанцев</div>
+                    <div class="review__reviewer-position">преподаватель Loftschool</div>
+                  </div>
+                </div>
+                <div class="review__quotations"><img class="quotation" src="assets/images/quotation.png" alt="Victor Sabantsev portrait"></div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__form">
+            <div class="form-contact">
+              <form class="form" action="" method="post">
+                <div class="form__head">Связаться со мной</div>
+                <div class="form__inputs">
+                  <input class="form__text-input" type="text" placeholder="Имя">
+                  <input class="form__text-input" type="text" placeholder="Email">
+                  <textarea class="form__textarea" name="textarea" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <div class="form__button-wrapper">   
+                  <div class="form__buttons">
+                    <input class="form__button form__button--left" type="button" value="Отправить">
+                    <input class="form__button form__button--right" type="button" value="Очистить">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom--wrapper">
-          <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__navigation">
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+        <div class="footer-bottom">
+          <div class="footer-bottom--wrapper">
+            <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+            <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

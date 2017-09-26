@@ -12,162 +12,229 @@
     <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__top-line">
-        <div class="header__socials">
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="31" height="17">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="26" height="22">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="#">
-                <svg class="icon" width="24" height="22">
-                  <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
-                </svg></a></li>
-          </ul>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-line">
+          <div class="header__socials">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="31" height="17">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="26" height="22">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#git"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="icon" width="24" height="22">
+                    <use xlink:href="assets/images/icons/sprite-header.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="header__menu"><a class="hamburger" href="#">
+              <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="background"></div></a></div>
         </div>
-        <div class="header__menu"><a class="hamburger" href="#">
-            <div class="hamburger__pic"><img class="hamburger__img" src="assets/images/icons/hamburger.svg" alt="background"></div></a></div>
-      </div>
-      <div class="header__about">
-        <div class="title"><img class="title__pic" src="assets/images/icons/portfolio_header.svg" alt="background"></div>
-        <div class="header__user">
-          <div class="user">
-            <div class="user__portrait">
-              <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt=""></div>
-            </div>
-            <div class="user__description">
-              <div class="user__name">Михаил Омелько</div>
-              <div class="user__about">Личный сайт веб разработчика</div>
+        <div class="header__about">
+          <div class="title"><img class="title__pic" src="assets/images/icons/portfolio_header.svg" alt="background"></div>
+          <div class="header__user">
+            <div class="user">
+              <div class="user__portrait">
+                <div class="user__img"><img class="user__pic" src="assets/images/portrait.jpg" alt=""></div>
+              </div>
+              <div class="user__description">
+                <div class="user__name">Михаил Омелько</div>
+                <div class="user__about">Личный сайт веб разработчика</div>
+              </div>
             </div>
           </div>
+          <div class="header__scroll-btn"><a class="scroll-down" href="#"><img class="scroll-down-arrow" src="assets/images/icons/arrow_down.svg" alt=""></a></div>
         </div>
-        <div class="header__scroll-btn"><a class="scroll-down" href="#"><img class="scroll-down-arrow" src="assets/images/icons/arrow_down.svg" alt=""></a></div>
+      </header>
+      <div class="triangle-section triangle-section--about-page">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
       </div>
-    </header>
-    <div class="triangle-section triangle-section--about-page">
-      <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
-        <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-        <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-      </svg>
-    </div>
-    <div class="about-section">
-      <div class="about-section__about-me">
-        <div class="about-me">
-          <div class="about-me__headline">
-            <div class="about-me__headline-wrapper">
-              <div class="about-headline">Обо мне</div>
+      <div class="about-section">
+        <div class="about-section__about-me">
+          <div class="about-me">
+            <div class="about-me__headline">
+              <div class="about-me__headline-wrapper">
+                <div class="about-headline">Обо мне</div>
+              </div>
+              <div class="about-me__background-wrapper"><img class="about-background" src="assets/images/icons/about_header.svg" alt="background"></div>
             </div>
-            <div class="about-me__background-wrapper"><img class="about-background" src="assets/images/icons/about_header.svg" alt="background"></div>
-          </div>
-          <div class="about-me__description">
-            <div class="who-is-me">
-              <div class="who-is-me__portrait"><img class="who-is-me__img" src="assets/images/portrait.jpg" alt="portrait"></div>
-              <div class="who-is-me__description">
-                <div class="about-description">
-                  <div class="about-description__header">
-                    <div class="about-header">Кто я</div>
+            <div class="about-me__description">
+              <div class="who-is-me">
+                <div class="who-is-me__portrait"><img class="who-is-me__img" src="assets/images/portrait.jpg" alt="portrait"></div>
+                <div class="who-is-me__description">
+                  <div class="about-description">
+                    <div class="about-description__header">
+                      <div class="about-header">Кто я</div>
+                    </div>
+                    <div class="about-description__text">Я веб разработчик из Владивостока. Мне 32 года. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium. Harum repellat voluptates aut dolorum dolorem perferendis ipsum et hic aspernatur itaque esse error quae possimus ducimus quidem fugiat, dolore eveniet. Placeat nulla dolorem aut animi maiores doloremque qui reiciendis perspiciatis quidem error recusandae ea quia tempora fuga odit ad illo numquam totam accusamus sapiente nam, amet, hic at tempore. Consequuntur dolor corrupti eos sed praesentium ipsa. Accusamus quidem ipsum ipsam minus minima accusantium iusto ea, ut totam impedit repellendus, eos eum omnis vitae, magni odio velit culpa eius a rem nobis deleniti esse ab laborum! Unde illum provident iste!</div>
                   </div>
-                  <div class="about-description__text">Я веб разработчик из Владивостока. Мне 32 года. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium. Harum repellat voluptates aut dolorum dolorem perferendis ipsum et hic aspernatur itaque esse error quae possimus ducimus quidem fugiat, dolore eveniet. Placeat nulla dolorem aut animi maiores doloremque qui reiciendis perspiciatis quidem error recusandae ea quia tempora fuga odit ad illo numquam totam accusamus sapiente nam, amet, hic at tempore. Consequuntur dolor corrupti eos sed praesentium ipsa. Accusamus quidem ipsum ipsam minus minima accusantium iusto ea, ut totam impedit repellendus, eos eum omnis vitae, magni odio velit culpa eius a rem nobis deleniti esse ab laborum! Unde illum provident iste!</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-section__skills">
-        <div class="skills">
-          <div class="skills__description">
-            <div class="skills__header">
-              <div class="skills-headline">Чем я могу быть вам полезен                     </div>
+        <div class="about-section__skills">
+          <div class="skills">
+            <div class="skills__description">
+              <div class="skills__header">
+                <div class="skills-headline">Чем я могу быть вам полезен                     </div>
+              </div>
+              <div class="skills__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
             </div>
-            <div class="skills__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
-          </div>
-          <div class="skills__technologies">
-            <div class="skills__frontend">
-              <h3 class="skills__name">Fronten</h3>
-              <div class="skills__diagramms"></div>
-            </div>
-            <div class="skills__backend">
-              <h3 class="skills__name">Backend</h3>
-              <div class="skills__diagramms"></div>
-            </div>
-            <div class="skills__workflow">
-              <h3 class="skills__name">Workflow</h3>
-              <div class="skills__diagramms"></div>
+            <div class="skills__technologies">
+              <ul class="skills-list">
+                <li class="skills-list__item"> 
+                  <h3 class="skills-list__name">Frontend</h3>
+                  <ul class="skills-list__diagrams">
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">HTML5</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">CSS3</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">JavaScript &amp; JQuery</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills-list__item">
+                  <h3 class="skills-list__name">Backend</h3>
+                  <ul class="skills-list__diagrams">
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-10" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">PHP</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-10" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">mySQL</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-10" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">Node.js &amp; npm</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-0" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">Mango.db</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills-list__item">       
+                  <h3 class="skills-list__name">Workflow</h3>
+                  <ul class="skills-list__diagrams">
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">Git</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">Gulp</span>
+                    </li>
+                    <li class="skills-list__diagram-item">
+                      <svg class="circles" viewbox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-30" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skills-list__title">Bower</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="map">
+        <div class="map-contacts">
+          <div class="contacts__header">
+            <h2 class="contacts__headline">Контакты</h2>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="icon icon--map" width="24" height="24">
+                <use xlink:href="assets/images/icons/sprite-about.svg#skype"></use>
+              </svg><span class="contacts__text">skype_kdn</span>
+            </li>
+            <li class="contacts__item"> 
+              <svg class="icon icon--map" width="23" height="17">
+                <use xlink:href="assets/images/icons/sprite-about.svg#mail"></use>
+              </svg><span class="contacts__text">omelkom@gmail.com</span>
+            </li>
+            <li class="contacts__item">
+              <svg class="icon icon--map" width="19" height="18">
+                <use xlink:href="assets/images/icons/sprite-about.svg#phone"></use>
+              </svg><span class="contacts__text">+7(924)230-53-85</span>
+            </li>
+            <li class="contacts__item">
+              <svg class="icon icon--map" width="19" height="24">
+                <use xlink:href="assets/images/icons/sprite-about.svg#marker"></use>
+              </svg><span class="contacts__text">г. Владивосток </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top__navigation">
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
+                <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item--round"><a class="socials__link" href="#">
+                    <svg class="icon" width="36" height="36">
+                      <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom--wrapper">
+            <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+            <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div class="map">
-      <div class="map-contacts">
-        <div class="contacts__header">
-          <h2 class="contacts__headline">Контакты</h2>
-        </div>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <svg class="icon icon--map" width="24" height="24">
-              <use xlink:href="assets/images/icons/sprite-about.svg#skype"></use>
-            </svg><span class="contacts__text">skype_kdn</span>
-          </li>
-          <li class="contacts__item"> 
-            <svg class="icon icon--map" width="23" height="17">
-              <use xlink:href="assets/images/icons/sprite-about.svg#mail"></use>
-            </svg><span class="contacts__text">omelkom@gmail.com</span>
-          </li>
-          <li class="contacts__item">
-            <svg class="icon icon--map" width="19" height="18">
-              <use xlink:href="assets/images/icons/sprite-about.svg#phone"></use>
-            </svg><span class="contacts__text">+7(924)230-53-85</span>
-          </li>
-          <li class="contacts__item">
-            <svg class="icon icon--map" width="19" height="24">
-              <use xlink:href="assets/images/icons/sprite-about.svg#marker"></use>
-            </svg><span class="contacts__text">г. Владивосток </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-top__navigation">
-          <div class="footer-menu">
-            <ul class="footer-list">
-              <li class="footer-list__item"><a class="footer-list__link" href="my-works.html">Мои работы</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="about.html">Обо мне</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="blog.html">Блог</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="index.html">Авторизация</a></li>
-            </ul>
-          </div>
-          <div class="footer__socials">
-            <ul class="socials">
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#git"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--round"><a class="socials__link" href="#">
-                  <svg class="icon" width="36" height="36">
-                    <use xlink:href="assets/images/icons/sprite-footer.svg#in"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom--wrapper">
-          <div class="footer-bot-left">Я веб-разработчик из Владивостока, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
-          <div class="footer__bot-right">&copy; Михаил Омелько | создано с любовью в LoftSchool | 2017</div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
