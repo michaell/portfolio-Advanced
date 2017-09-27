@@ -45,6 +45,45 @@ const paths = {
     }
 };
 
+/*------------pathes to JS files------------*/
+
+
+let moduleJs = [
+    'app/scripts/common/blur.js',
+    'app/scripts/common/test.js'
+];
+
+/*------------pathes to outer plugins and JS libraries------------*/
+
+let vendorJs = [
+    'node_modules/jquery/dist/jquery.min.js'
+];
+
+//js
+function scripts(){
+    return gulp.src(moduleJs)
+        .pipe(plumber({
+            errorHandler: notify.onError(function (err){
+                return {title: 'javaScript', message: err.message}
+            })
+        }))
+        // .pipe(gulpIf(isDevelopment, sourcemaps.init()))
+        .pipe(concat('main.min.js'))
+        // .pipe(uglify())
+        // .pipe(gulpIf(isDevelopment, sourcemaps.write())) //write sourcemaps in dev mode
+        .pipe(gulp.dest(paths.scripts.dest));
+};
+
+/*-------combining outer plugins and JS libraries in one file--------*/
+function vendorJS() {
+    return gulp
+    .src(vendorJs)
+    .pipe(concat('vendor.min.js'))
+    .pipe(gulp.dest(paths.scripts.dest));
+};
+
+
+
 /*------------pathes to outer plugins and style libraries------------*/
 let vendorCss = [
     'node_modules/normalize-css/normalize.css'
@@ -84,11 +123,11 @@ function vendorCSS(){
 };
  
 /*------------------------------webpack------------------------------*/
-function scripts() {
-    return gulp.src('app/scripts/app.js')
-        .pipe(gulpWebpack(webpackConfig, webpack))
-        .pipe(gulp.dest(paths.scripts.dest));
-}
+// function scripts() {
+//     return gulp.src('app/scripts/app.js')
+//         .pipe(gulpWebpack(webpackConfig, webpack))
+//         .pipe(gulp.dest(paths.scripts.dest));
+// }
 
 /*------------------------build folder cleaning------------------------*/
 function clean() {
@@ -139,6 +178,6 @@ exports.vendorCSS = vendorCSS;
 /*------------------------build and watch------------------------*/
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, vendorCSS, scripts, templates, images, fonts),
+    gulp.parallel(styles, vendorCSS, scripts, vendorJS, templates, images, fonts),
     gulp.parallel(watch, server)
 ));

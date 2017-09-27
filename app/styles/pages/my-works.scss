@@ -210,7 +210,7 @@
     @include tablets {
         position: absolute;
         width: 100%;
-        top: 1429px;
+        top: 1386px;
     }
 }
 
@@ -259,11 +259,12 @@
 
 /*----------------------reviews----------------*/
 .reviews {
-    background: url(../images/works_bg.jpg) center center no-repeat;
-    background-size: cover;
+    // background: url(../images/works_bg.jpg) center center no-repeat;
+    // background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    position: relative;
     @include tablets {
         margin-top: 225px;
     }
@@ -274,6 +275,16 @@
     }
 
 }
+
+.blur__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 1115px;
+  }
 
 .reviews__header {
     width: 358px;
@@ -416,7 +427,33 @@
 
 .reviews__form {
     margin-bottom: 182px;
+    position: relative;
 }
+
+.blur-form__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // top: 50%;
+    // left: 50%;
+    // width: 300px;
+    // height: 400px;
+    // transform: translate(-50%, -50%);
+    // border-radius: 9px;
+    overflow: hidden;
+    // border: 1px solid black;
+  }
+
+.blur-form {
+    width: 100%;
+    height: 100%;
+    background: url(../images/works_bg.jpg) center center no-repeat;
+    filter:blur(20px);
+    -webkit-filter:blur(20px);
+}
+
 
 .form {
     display: flex;
@@ -426,7 +463,7 @@
 
 .form-contact {
     width: 380px;
-    background-color: rgba(255, 255, 255, 0.73);
+    // background-color: rgba(255, 255, 255, 0.73);
     padding: 20px;
     border-radius: 5px;
     padding: 23px 20px 46px;

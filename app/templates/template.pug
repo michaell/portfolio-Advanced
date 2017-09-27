@@ -14,10 +14,13 @@ html
     //- favicon block end
     link(rel='stylesheet' href='assets/styles/vendor.min.css')
     link(rel='stylesheet' href='assets/styles/app.min.css')
-    script(src='assets/scripts/bundle.js' defer)
+    //- script(src='assets/scripts/bundle.js' defer)
 
   body
     .wrapper
       block content
-        
+
+
+    script(src='assets/scripts/vendor.min.js')
+    script(src='assets/scripts/main.min.js')   
     //- include common/menu.pug

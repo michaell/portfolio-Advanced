@@ -1,4 +1,18 @@
 const slider = require('./common/slider');
-const $ = require('jquery'); // если будет нужен
+// const $ = require('jquery'); // если будет нужен
 
-slider(); // инициализируем слайдер
+const test = require('./common/test');
+
+
+
+
+// const $ = require('../../node_modules/jquery/dist/jquery');
+
+
+
+
+
+
+
+test() 
+// slider(); // инициализируем слайдер
